@@ -93,10 +93,8 @@ print(Counter(pred_pca_200))
 # ----------------
 
 np.savetxt("submission_svc_poly.csv", np.c_[range(1, len(test) + 1), pred_svc_poly], delimiter=",", header="ImageId,Label", comments="", fmt="%d")
-
 np.savetxt("submission_rfc_500.csv", np.c_[range(1, len(test) + 1), pred_rfc_500], delimiter=",", header="ImageId,Label", comments="", fmt="%d")
 np.savetxt("submission_rfc_1000.csv", np.c_[range(1, len(test) + 1), pred_rfc_1000], delimiter=",", header="ImageId,Label", comments="", fmt="%d")
-
 np.savetxt("submission_pca_25.csv", np.c_[range(1, len(test) + 1), pred_pca_25], delimiter=",", header="ImageId,Label", comments="", fmt="%d")
 np.savetxt("submission_pca_50.csv", np.c_[range(1, len(test) + 1), pred_pca_50], delimiter=",", header="ImageId,Label", comments="", fmt="%d")
 np.savetxt("submission_pca_100.csv", np.c_[range(1, len(test) + 1), pred_pca_100], delimiter=",", header="ImageId,Label", comments="", fmt="%d")
